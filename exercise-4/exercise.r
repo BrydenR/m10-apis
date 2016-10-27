@@ -53,7 +53,7 @@ do.call(rbind, data)
 # Make sure movies is treated as a data frame by calling as.data.frame and assign that to movies.df
 movies.df <- as.data.frame(movie.list)
 # Use your Director function to see who directed all these movies. Assign the result to movie.info
-
+movie.info <- do.call(Director, movies.df)
 # Create a variable called meta.scores which is a vector containing the Metascore column from movie.df
 
 # Create a variable called movie_titles which is a vector containing the Title column from movie.df
